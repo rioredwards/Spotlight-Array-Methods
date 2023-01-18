@@ -5,14 +5,14 @@ test('filterOceania returns countries in Oceania', () => {
   expect(filterOceania(countries).map((elem) => elem.iso2)).toStrictEqual(['KI', 'MH', 'PF', 'MH']);
 });
 
-test.skip('filterAu returns countries that contain au', () => {
+test('filterAu returns countries that contain au', () => {
   expect(filterAu(countries).map((elem) => elem.name)).toStrictEqual([
     'Saudi Arabia',
     'Mauritania',
   ]);
 });
 
-test.skip('filterYoungDogs returns dogs that are less than 2 years old', () => {
+test('filterYoungDogs returns dogs that are less than 2 years old', () => {
   expect(filterYoungDogs(dogs)).toStrictEqual([
     { name: 'Spot', age: 2 },
     { name: 'Rover', age: 1 },
