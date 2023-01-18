@@ -34,7 +34,7 @@ test('getCountryNames should return the country names', () => {
   ]);
 });
 
-test.skip('getCountryCodes return a nested array of countries and their codes', () => {
+test('getCountryCodes return a nested array of countries and their codes', () => {
   expect(getCountryCodes(countries)).toStrictEqual([
     ['Ecuador', 'EC'],
     ['Lesotho', 'LS'],
